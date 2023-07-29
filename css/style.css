@@ -206,8 +206,8 @@ body {
 
 	.header-title {
 		width: 89%;
-		max-width: 600px;
-		margin: 105px auto 0 auto;
+		max-height: 100px;
+		margin: 87px auto 0 auto;
 		font-size: 40px;
 		line-height: 1.375;
 	}
@@ -216,7 +216,7 @@ body {
 @media screen and (max-width: 640px) {
 	.page-header {
 		min-height: 640px;
-		padding: 30px 0 220px;
+		padding: 30px 0 200px;
 		background-image: url("../img/banner-mobile.jpg");
 	}
 
@@ -241,14 +241,18 @@ body {
 	.logo-mobile {
 		display: block;
 		text-align: center;
-		width: 75%;
+		width: 85%;
 		margin: 175px auto 0 auto;
 	}
 
+	.logo-img {
+		width: 270px;
+	}
+
 	.header-title {
-		width: 75%;
-		max-width: 270px;
-		margin: 45px auto 0 auto;
+		width: 85%;
+		max-width: 300px;
+		margin: 30px auto 0 auto;
 		font-size: 26px;
 		line-height: 1.38;
 	}
@@ -408,7 +412,7 @@ body {
 
 .trends {
 	max-width: 1660px;
-	margin: 60px auto 0 auto;
+	margin: 55px auto 0 auto;
 }
 
 .section-title {
@@ -439,7 +443,7 @@ body {
 	align-items: flex-end;
 	width: calc(25% - 4px);
 	flex-grow: 1;
-	padding: 9% 20px 20px;
+	padding: 8% 20px 20px;
 	margin-right: 4px;
 	margin-bottom: 4px;
 	background-color: #1c2141;
@@ -486,7 +490,7 @@ body {
 
 .trends-item {
 	width: 100%;
-	padding: 40px 40px 35px 25px;
+	padding: 25px 40px 29px 25px;
 	border: solid 3px rgba(181, 159, 91, 0.6);
 }
 
@@ -517,7 +521,7 @@ body {
 }
 
 .trends-title {
-	line-height: 1.2;
+	line-height: 1;
 }
 
 .trends-title-link {
@@ -535,7 +539,7 @@ body {
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
 	.trends {
-		margin-top: 50px;
+		margin-top: 43px;
 	}
 
 	.section-title {
@@ -543,11 +547,16 @@ body {
 	}
 
 	.section-title::after {
-		margin: 15px auto 20px auto;
+		margin: 9px auto 20px auto;
 	}
 
 	.trends-item {
-		padding: 35px 60px 35px 30px;
+		padding: 35px 50px 20px 30px;
+	}
+
+	.trends-item-wrp-trip,
+	.trends-item-wrp-lemon {
+		padding: 90px 18px 23px 20px;
 	}
 
 	.trends-title-link {
@@ -571,7 +580,7 @@ body {
 
 @media screen and (max-width: 640px) {
 	.trends {
-		margin-top: 45px;
+		margin-top: 38px;
 	}
 
 	.section-title {
@@ -579,15 +588,16 @@ body {
 	}
 
 	.section-title::after {
-		margin: 12px auto 25px auto;
+		margin: 7px auto 25px auto;
 	}
 
 	.trends-item {
-		padding: 30px 30px 30px 20px;
+		padding: 25px 30px 15px 20px;
 	}
 
 	.trends-title-link {
 		font-size: 17px;
+		letter-spacing: -0.6px;
 	}
 }
 
@@ -596,12 +606,14 @@ body {
 		width: 100%;
 		margin-right: 0;
 		margin-bottom: 3px;
+		padding-top: 24%;
+		padding-bottom: 5%;
 	}
 }
 
 
 .container.main-aside {
-	margin-top: 60px;
+	margin-top: 55px;
 	display: flex;
 }
 
@@ -629,7 +641,7 @@ body {
 }
 
 .article-content .tags {
-	margin-bottom: 7px;
+	margin-bottom: 0px;
 }
 
 .tags .list-item {
@@ -641,12 +653,13 @@ body {
 }
 
 .article-main-title {
-	margin-bottom: 15px;
-	line-height: 1.2;
+	letter-spacing: 2.2px;
+	margin-bottom: 28px;
+	line-height: 1;
 }
 
 .article-main-title-link {
-	font-size: 20px;
+	font-size: 17px;
 	color: #0f0d0e;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -659,7 +672,7 @@ body {
 }
 
 .date-and-autor {
-	margin-bottom: 35px;
+	margin-bottom: 48px;
 }
 
 .date {
@@ -710,7 +723,7 @@ body {
 
 .article-new-posts {
 	display: flex;
-	margin-bottom: 17px;
+	margin-bottom: 15px;
 }
 
 .article-new-posts-img-container {
@@ -742,7 +755,7 @@ body {
 
 
 .form-search-container {
-	margin-top: 60px;
+	margin-top: 55px;
 }
 
 .form-search {
@@ -888,7 +901,7 @@ body {
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
 	.container.main-aside {
-		margin-top: 50px;
+		margin-top: 40px;
 	}
 
 	.container-main {
@@ -902,8 +915,8 @@ body {
 	.article-main::after {
 		content: "";
 		display: block;
-		margin-top: 23px;
-		margin-bottom: 40px;
+		margin-top: 17px;
+		margin-bottom: -18px;
 		width: 100%;
 		height: 3px;
 		background-color: rgba(122, 122, 122, 0.2);
@@ -914,16 +927,18 @@ body {
 	}
 
 	.article-img-container {
-		margin-bottom: 17px;
+		margin-bottom: 10px;
 		margin-right: 0;
 	}
 
 	.article-img {
 		width: 100%;
 	}
-
+	.article-main-title {
+		letter-spacing: 0px;
+	}
 	.date-and-autor {
-		margin-bottom: 40px;
+		margin-bottom: 28px;
 	}
 }
 
@@ -934,7 +949,7 @@ body {
 	}
 
 	.container.main-aside {
-		margin-top: 45px;
+		margin-top: 40px;
 		display: block;
 	}
 
@@ -951,14 +966,14 @@ body {
 		content: "";
 		display: block;
 		margin-top: 20px;
-		margin-bottom: 35px;
+		margin-bottom: -21px;
 		width: 100%;
 		height: 3px;
 		background-color: rgba(122, 122, 122, 0.2);
 	}
 
 	.article-img-container {
-		margin-bottom: 15px;
+		margin-bottom: 5px;
 		margin-right: 0;
 	}
 
@@ -972,6 +987,7 @@ body {
 
 	.article-main-title {
 		margin-bottom: 12px;
+		letter-spacing: 0px;
 	}
 
 	.article-main-title-link {
@@ -979,22 +995,46 @@ body {
 	}
 
 	.date-and-autor {
-		margin-bottom: 25px;
+		margin-bottom: 10px;
+	}
+
+	.article-text {
+		line-height: 1.35;
+		letter-spacing: -0.5px;
 	}
 
 	.container-aside {
-		margin-top: 45px;
+		margin-top: 63px;
 		width: 100%;
+	}
+	.article-new-posts {
+		margin-bottom: 18px;
+	}
+	.form-mailing-container {
+		margin-top: 37px;
+	}
+	.tags-container {
+		margin-top: 40px;
+	}
+	.topics-container {
+		margin-top: 0px;
+	}
+	.products-list {
+		padding-top: 10px;
+	}
+	.product-text {
+		padding: 40px 20px 10px 20px;
 	}
 }
 
 
 .product {
-	margin-top: 65px;
+	margin-top: 55px;
 }
 
 .products-list {
 	display: flex;
+	margin-top: -5px;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
@@ -1016,7 +1056,7 @@ body {
 
 .product-text {
 	flex-grow: 1;
-	padding: 40px 20px 25px 20px;
+	padding: 35px 20px 13px 20px;
 	margin-top: -30px;
 	border: 3px solid rgba(181, 159, 91, 0.7);
 }
@@ -1098,14 +1138,17 @@ body {
 	.product {
 		margin-top: 50px;
 	}
-
+	.products-list {
+		display: flex;
+		margin-top: 30px;
+	}
 	.product-wrp {
 		width: calc(50% - 13.5px);
 		margin-bottom: 25px;
 	}
 
 	.product-text {
-		padding-top: 55px;
+		padding-top: 49px;
 		margin-top: -45px;
 	}
 }
@@ -1196,20 +1239,20 @@ body {
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
 	.page-footer {
-		margin-top: 50px;
+		margin-top: 42px;
 	}
 
 	.copyright-container {
-		margin-top: 50px;
+		margin: 45px auto;
 	}
 }
 
 @media screen and (max-width: 640px) {
 	.page-footer {
-		margin-top: 40px;
+		margin-top: 60px;
 	}
 
 	.copyright-container {
-		margin-top: 50px;
+		margin-top: 45px;
 	}
 }
