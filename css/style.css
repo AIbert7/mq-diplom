@@ -274,7 +274,7 @@ body {
 
 .pop-up-container {
 	position: relative;
-	top: -42px;
+	top: 25px;
 	width: 390px;
 	height: 590px;
 	max-width: 700px;
@@ -420,6 +420,7 @@ form.feedback-form {
 	}
 
 	.pop-up-container {
+		top: -107px;
 		width: 330px;
 		height: 550px;
 		padding: 25px 25px 55px 20px;
@@ -427,7 +428,6 @@ form.feedback-form {
 
 	.pop-up {
 		position: fixed;
-		top: -215px;
 	}
 
 	.feedback {
@@ -1034,6 +1034,10 @@ form.feedback-form {
 
 	.article-main-title {
 		letter-spacing: 0px;
+	}
+
+	.article-main-title-link {
+		font-size: 17px;
 	}
 
 	.date-and-autor {
