@@ -274,32 +274,37 @@ body {
 
 .pop-up-container {
 	position: relative;
-	/*для крестика*/
-	width: 30%;
+	top: -42px;
+	width: 390px;
+	height: 590px;
 	max-width: 700px;
-	padding: 30px 20px;
 	background-color: white;
+	padding: 48px 23px 55px 30px;
 }
 
 .feedback {
-	font-size: 12px;
+	font-size: 13px;
 }
 
-.form-row {
-	margin-bottom: 20px;
+form.feedback-form {
+	margin-top: -14px;
+}
+
+.row-question-select {
+	margin-bottom: 38px;
 }
 
 .question-select {
 	display: inline-block;
 	width: 100%;
 	margin-top: 10px;
-	padding: 13px 10px;
+	padding: 15px 21px;
 	font-size: inherit;
 	color: grey;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border: none;
-	background: #f3f2f2 url(../svg/form-arrows.svg) no-repeat right 10px center;
+	background: #f4f7f6 url(../svg/form-arrows.svg) no-repeat right 10px center;
 	background-size: 8px;
 }
 
@@ -309,6 +314,10 @@ body {
 	outline-offset: -1px;
 }
 
+.row-form-hint {
+	margin-bottom: 25px;
+}
+
 .form-hint {
 	display: block;
 	margin-bottom: 10px;
@@ -316,6 +325,7 @@ body {
 
 .radio-group {
 	display: inline-block;
+	margin-right: 15px;
 }
 
 .radio-group:nth-of-type(n+2) {
@@ -344,6 +354,10 @@ body {
 	background-image: url("../svg/form-circle.svg");
 }
 
+.row-form-textarea {
+	margin-bottom: 50px;
+}
+
 .form-textarea {
 	width: 100%;
 	min-height: 100px;
@@ -352,7 +366,7 @@ body {
 	margin-top: 10px;
 	font: inherit;
 	color: grey;
-	background-color: #f3f2f2;
+	background-color: #f4f7f6;
 	border: none;
 }
 
@@ -391,9 +405,6 @@ body {
 }
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
-	.pop-up-container {
-		width: 50%;
-	}
 
 	.form-textarea {
 		min-height: 50px;
@@ -401,8 +412,60 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+	.popup-close {
+		position: absolute;
+		top: -30px;
+		right: 4px;
+		width: 25px;
+	}
+
 	.pop-up-container {
-		width: 90%;
+		width: 330px;
+		height: 550px;
+		padding: 25px 25px 55px 20px;
+	}
+
+	.pop-up {
+		position: fixed;
+		top: -215px;
+	}
+
+	.feedback {
+		font-size: 13px;
+	}
+
+	.question-select {
+		margin-top: 12px;
+		padding: 15px 22px;
+		letter-spacing: 0.3px;
+	}
+
+	.row-question-select {
+		margin-bottom: 30px;
+	}
+
+	.row-form-hint {
+		margin-bottom: 19px;
+	}
+
+	.row-form-textarea {
+		margin-bottom: 95px;
+	}
+
+	.form-hint {
+		margin-bottom: 0px;
+	}
+
+	.radio-group {
+		margin-right: 30px;
+	}
+
+	.radio-group-text::before {
+		width: 25px;
+		height: 44px;
+		margin-right: 7px;
+		background: url(../svg/form-empty-circle.svg) no-repeat center center;
+		background-size: 100%;
 	}
 
 	.form-textarea {
@@ -637,7 +700,7 @@ body {
 }
 
 .article-img {
-	width: 23vw;
+	min-width: 381.8px;
 }
 
 .article-content .tags {
@@ -653,13 +716,12 @@ body {
 }
 
 .article-main-title {
-	letter-spacing: 2.2px;
 	margin-bottom: 28px;
 	line-height: 1;
 }
 
 .article-main-title-link {
-	font-size: 17px;
+	font-size: 20px;
 	color: #0f0d0e;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -773,7 +835,7 @@ body {
 	padding-left: 16px;
 	padding-right: 16px;
 	border: none;
-	background-color: #f3f2f2;
+	background-color: #f4f7f6;
 }
 
 .input-search:hover,
@@ -808,7 +870,7 @@ body {
 	padding-right: 16px;
 	margin-bottom: 20px;
 	border: none;
-	background-color: #f3f2f2;
+	background-color: #f4f7f6;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
@@ -908,6 +970,41 @@ body {
 		margin-right: 35px;
 	}
 
+	.pop-up-container {
+		top: 95px;
+		padding: 52px 30px 55px 30px;
+	}
+
+	form.feedback-form {
+		margin-top: 26px;
+		font-size: 13px;
+	}
+
+	.question-select {
+		font-size: 13px;
+	}
+
+	.row-question-select {
+		margin-bottom: 35px;
+	}
+
+	.radio-group {
+		margin-right: 28px;
+	}
+
+	.radio-group-text::before {
+		width: 25px;
+		height: 25px;
+	}
+
+	.row-form-hint {
+		margin-bottom: 25px;
+	}
+
+	.row-form-textarea {
+		margin-bottom: 97px;
+	}
+
 	.article-main {
 		display: block;
 	}
@@ -934,9 +1031,11 @@ body {
 	.article-img {
 		width: 100%;
 	}
+
 	.article-main-title {
 		letter-spacing: 0px;
 	}
+
 	.date-and-autor {
 		margin-bottom: 28px;
 	}
@@ -983,6 +1082,7 @@ body {
 
 	.article-img {
 		width: 100%;
+		min-width: auto;
 	}
 
 	.article-main-title {
@@ -1007,21 +1107,27 @@ body {
 		margin-top: 63px;
 		width: 100%;
 	}
+
 	.article-new-posts {
 		margin-bottom: 18px;
 	}
+
 	.form-mailing-container {
 		margin-top: 37px;
 	}
+
 	.tags-container {
 		margin-top: 40px;
 	}
+
 	.topics-container {
 		margin-top: 0px;
 	}
+
 	.products-list {
 		padding-top: 10px;
 	}
+
 	.product-text {
 		padding: 40px 20px 10px 20px;
 	}
@@ -1138,10 +1244,12 @@ body {
 	.product {
 		margin-top: 50px;
 	}
+
 	.products-list {
 		display: flex;
 		margin-top: 30px;
 	}
+
 	.product-wrp {
 		width: calc(50% - 13.5px);
 		margin-bottom: 25px;
@@ -1179,7 +1287,7 @@ body {
 }
 
 .footer-container {
-	background-color: #f3f2f2;
+	background-color: #f4f7f6;
 	padding-top: 28px;
 	padding-bottom: 28px;
 }
