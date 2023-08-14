@@ -21,7 +21,12 @@ a {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute;
 }
-
+.visually-hidden {
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute;
+}
 @font-face {
 	font-family: "Open Sans";
 	font-style: normal;
