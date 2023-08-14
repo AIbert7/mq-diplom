@@ -15,7 +15,7 @@ a {
 	color: inherit;
 }
 
-.visually-hidden {
+.pop-up-hidden {
 	width: 1px;
 	height: 1px;
 	clip: rect(1px, 1px, 1px, 1px);
@@ -701,6 +701,7 @@ form.feedback-form {
 
 .article-img {
 	min-width: 381.8px;
+	max-width: 540px;
 }
 
 .article-content .tags {
